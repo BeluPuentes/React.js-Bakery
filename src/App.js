@@ -9,6 +9,11 @@ import Comprar from './pages/comprar';
 import Teams from './pages/team';
 import Blogs from './pages/blogs';
 import SignUp from './pages/signup';
+import Titulo from './components/Titulo';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+
+const text= "My Bakery"
+const sub = "Donde podes comprar comida y buscar recetas "
 
 function App() {
 return (
@@ -23,9 +28,16 @@ return (
 		<Route path='/blogs' component={<Blogs/>} />
 		<Route path='/sign-up' component={<SignUp/>} />
 	</Routes>
+
+		<div className='App'>
+			<Titulo texto={text} subtitulo={sub}/>
+			
+		</div>
+		<ItemListContainer/>
+		
 	</Router>
+	
 );
 }
-
 
 export default App;

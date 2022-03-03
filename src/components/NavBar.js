@@ -1,4 +1,5 @@
 import React from 'react';
+import CartWidget from '../components/CartWidget/CartWidget'
 import {
 Nav,
 NavLink,
@@ -39,6 +40,7 @@ return (
 		<NavBtn>
 		<NavBtnLink to='/signin'>Sign In</NavBtnLink>
 		</NavBtn>
+		<CartWidget/>
 	</Nav>
 	</>
 );
