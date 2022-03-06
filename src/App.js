@@ -29,9 +29,9 @@ return (
 		<Route path='/sign-up' component={<SignUp/>} />
 	</Routes>
 
-		<div className='App'>
+		<div className='titulo'>
 			<Titulo texto={text} subtitulo={sub}/>
-			
+	
 		</div>
 		<ItemListContainer/>
 		

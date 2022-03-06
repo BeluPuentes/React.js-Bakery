@@ -7,7 +7,7 @@ import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
 
 export default function App() {
-const [itemCount, setItemCount] = React.useState(1);
+const [itemCount, setItemCount] = React.useState(0);
 
 return (
 	<div style={{display: "block", right: 10, padding: 30 }}>

@@ -7,12 +7,22 @@
   pointer-events: none;
 }
 
+.titulo{
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 800;
+  color:#A270E8 ;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+.NavBar{
+  font-weight: 800;
+  font-size: 20px;
+}
 .App-header {
   background-color:#AED6F1 ;
   min-height: 100vh;
@@ -35,4 +45,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body{
+  background-color:#DDEBF4 ;
+}
+h1{
+  font-size: 60px;
+  
 }

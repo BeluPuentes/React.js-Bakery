@@ -12,7 +12,7 @@ NavBtnLink,
 const Navbar = () => {
 return (
 	<>
-	<Nav>
+	<Nav className='NavBar'>
 		<Bars />
 
 		<NavMenu>
