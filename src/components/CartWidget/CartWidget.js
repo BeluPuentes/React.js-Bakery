@@ -7,18 +7,18 @@ import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
 
 export default function App() {
-const [itemCount, setItemCount] = React.useState(0);
+const [count, setCount] = React.useState(0);
 
 return (
 	<div style={{display: "block", right: 10, padding: 30 }}>
 	<div>
-		<Badge color="secondary" badgeContent={itemCount}>
+		<Badge color="secondary" badgeContent={count}>
 		<ShoppingCartIcon />{" "}
 		</Badge>
 		<ButtonGroup>
 		<Button
 			onClick={() => {
-			setItemCount(Math.max(itemCount - 1, 0));
+			setCount(Math.max(count - 1, 0));
 			}}
 		>
 			{" "}
@@ -26,7 +26,7 @@ return (
 		</Button>
 		<Button
 			onClick={() => {
-			setItemCount(itemCount + 1);
+			setCount(count + 1);
 			}}
 		>
 			{" "}

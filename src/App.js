@@ -12,6 +12,8 @@ import SignUp from './pages/signup';
 import Titulo from './components/Titulo';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
+alert ("Bienvenido");
+
 const text= "My Bakery"
 const sub = "Donde podes comprar comida y buscar recetas "
 
@@ -33,9 +35,14 @@ return (
 			<Titulo texto={text} subtitulo={sub}/>
 	
 		</div>
-		<ItemListContainer/>
+		<div>
+			<ItemListContainer/>
+		</div>
 		
+
 	</Router>
+	
+
 	
 );
 }
