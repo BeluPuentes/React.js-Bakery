@@ -11,6 +11,8 @@ import Blogs from './pages/blogs';
 import SignUp from './pages/signup';
 import Titulo from './components/Titulo';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from "./components/Item/ItemDetailContainer";
+
 
 alert ("Bienvenido");
 
@@ -37,6 +39,13 @@ return (
 		</div>
 		<div>
 			<ItemListContainer/>
+
+		</div>
+		<div>
+			<br></br>
+			<br></br>
+			<br></br>
+			<ItemDetailContainer/>
 		</div>
 		
 

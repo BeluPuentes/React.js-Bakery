@@ -16,7 +16,7 @@ function Item (props){
             />
             <h3>{nombre}</h3>
             <p>{descripcion}</p>
-            <span>${precio}</span>
+            <span>{precio}</span>
             <div>
                 <button
                     className="snipcart-add-item"
