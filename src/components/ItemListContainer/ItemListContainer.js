@@ -3,8 +3,10 @@ import ItemList from "../Item/ItemList";
 
 function ItemListContainer () {
   const[productos, setProductos] = useState([])
+  const [loading, setLoading] = useState(false)
 
   useEffect (()=>{
+    setLoading(true)
     const promesa = new Promise ((resolve,reject)=>{
       setTimeout(()=>{
         resolve([
@@ -19,13 +21,21 @@ function ItemListContainer () {
 
     })
 
-    promesa.then(res => setProductos(res))
+    promesa.then((res) => {setProductos(res)})
+    .finally(() => {
+      setLoading(false)
+  })
+
   }, [])
 
 
   return (
       <div className="flex">
-        <ItemList lista={productos}/>
+        {
+          loading
+                 ? <h2>Cargando...</h2>
+                 : <ItemList lista={productos}/>
+        }
       </div>
 
   )
