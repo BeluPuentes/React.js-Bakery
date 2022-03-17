@@ -22,8 +22,11 @@ return (
 		<NavLink to='/events' activeStyle>
 			Eventos
 		</NavLink>
-		<NavLink to='/comprar' activeStyle>
-			Comprar
+		<NavLink to='/comprar/tortas' activeStyle>
+			Tortas
+		</NavLink>
+		<NavLink to='/comprar/otros' activeStyle>
+			Otros
 		</NavLink>
 		<NavLink to='/team' activeStyle>
 			Teams

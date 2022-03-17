@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import './Item.css';
 
 function Item (props){
@@ -18,6 +19,8 @@ function Item (props){
             <p>{descripcion}</p>
             <span>{precio}</span>
             <div>
+                <Link to={`/detail/${id}`}> 
+                
                 <button
                     className="snipcart-add-item"
                     data-item-id={id}
@@ -28,6 +31,7 @@ function Item (props){
                 >
                     Add to Cart
                 </button>
+                </Link>
             </div>
         </div>
     );

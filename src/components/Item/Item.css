@@ -78,15 +78,10 @@
 
 @media screen and (max-width: 550px){
     .titulo{
-        padding-bottom: 30vh;
+        padding-bottom: 50vh;
     }
     .product {
-        margin: 1%;
-        padding: 15px;
-        border: 1px solid lightgray;
         width: 40%;
-        border-radius: 5px;
-       
-        
+
     }
 }

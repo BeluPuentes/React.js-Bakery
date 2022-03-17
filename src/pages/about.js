@@ -1,22 +1,21 @@
 import React from 'react';
 import Titulo from '../components/Titulo';
+import ItemListContainer from '../components/ItemListContainer/ItemListContainer';
 
 const About = () => {
 return (
 	<>
-	<div
-	style={{
-		display: 'flex',
-		justifyContent: 'Right',
-		alignItems: 'Right',
-		height: '100vh'
-	}}
-	>
+	<div className='titulo'> 
 	<h1>My Bakery</h1>
 	</div>
-	<div className='App'>
-		<Titulo texto="HOLA" subtitulo="como estas"/>
+	<div className='titulo'>
+		<Titulo subtitulo="Donde podes comprar comida y buscar recetas"/>
 	</div>
+	<>
+	<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+	 <ItemListContainer/>
+	</>
+	
 	
 	</>
 );

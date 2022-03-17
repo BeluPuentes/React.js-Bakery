@@ -2,14 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
 return (
-	<div
-	style={{
-		display: 'flex',
-		justifyContent: 'Right',
-		alignItems: 'Right',
-		height: '100vh'
-	}}
-	>
+	<div className='titulo'	>
 	<h1>Encuentra y sube recetas</h1>
 	</div>
 );

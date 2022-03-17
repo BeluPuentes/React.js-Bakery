@@ -1,22 +1,26 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router'
+import { useParams } from 'react-router-dom'
 import { pedirDatos } from '../helpers/pedirDatos'
 import {ItemDetail}  from './ItemDetail'
 
 const ItemDetailContainer = () => {
 
     const [item, setItem] = useState()
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
 
     const { itemId } = useParams()
 
     useEffect(()=>{
 
         setLoading(true)
+        console.log(item)
 
         pedirDatos()
-            .then( resp => {
-                setItem( resp.find( prod => prod.id === Number(itemId)) )
+            .then( (res) => {
+                setItem(res.find((prod) => prod.id === Number(itemId)))
+            })
+            .catch((err)=>{
+              console.log(err)
             })
             .finally(()=>{
                 setLoading(false)

@@ -2,14 +2,7 @@ import React from 'react';
 
 const SignUp = () => {
 return (
-	<div
-	style={{
-		display: 'flex',
-		justifyContent: 'Right',
-		alignItems: 'Right',
-		height: '100vh'
-	}}
-	>
+	<div className='titulo'	>
     
 	<h1>Unete a nuestro equipo</h1>
 	</div>

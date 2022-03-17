@@ -2,14 +2,7 @@ import React from 'react';
 
 const Events = () => {
 return (
-	<div
-	style={{
-		display: 'flex',
-		justifyContent: 'Right',
-		alignItems: 'Right',
-		height: '100vh'
-	}}
-	>
+	<div className='titulo'	>
 	<h1>Eventos donde encontras nuestra comida</h1>
 	</div>
 );

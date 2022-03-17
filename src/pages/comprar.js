@@ -1,17 +1,18 @@
 import React from 'react';
+import ItemListContainer from '../components/ItemListContainer/ItemListContainer';
 
 const Comprar = () => {
 return (
-	<div
-	style={{
-		display: 'flex',
-		justifyContent: 'Right',
-		alignItems: 'Right',
-		height: '100vh'
-	}}
-	>
+	<>
+	<div className='titulo'	>
 	<h1>Para Comprar</h1>
 	</div>
+	 <>
+	 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+	  <ItemListContainer/>
+	 </>
+	 </>
+	 
 );
 };
 
