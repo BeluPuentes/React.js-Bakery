@@ -4,7 +4,7 @@ import { pedirDatos } from '../helpers/pedirDatos'
 import {ItemDetail}  from './ItemDetail'
 
 const ItemDetailContainer = () => {
-    const { itemid } = useParams();
+    const { itemid } = useParams()
   
     const [item, setItem] = useState(null);
     const [loading, setLoading] = useState(false);
@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
         .finally(() => {
           setLoading(false);
         });
-    }, [itemid]);
+    }, []);
   
     return <div>{loading ? <h2>Cargando...</h2> : <ItemDetail {...item} />}</div>;
   };

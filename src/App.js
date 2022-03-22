@@ -12,6 +12,7 @@ import SignUp from './pages/signup';
 import Titulo from './components/Titulo';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
+import Modal from './Modal/Modal';
 
 alert ("Bienvenido");
 
@@ -21,6 +22,7 @@ function App() {
 return (
 	<Router>
 	<Navbar />
+	<Modal/>
 	<Routes>
 		<Route path='/' exact element={<Home/>} />
 		<Route path='/about' element={<About/>} />
