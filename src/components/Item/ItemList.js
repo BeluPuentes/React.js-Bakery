@@ -9,7 +9,7 @@ function ItemList({lista}){
             <main className={"main"}>
                 <div className={"grid"}>
                     {lista.map((list) =>
-                        <Item id={lista.id} nombre={list.nombre} precio={list.precio} descripcion={list.descripcion} stock={list.stock} pictureUrl= {list.pictureUrl}
+                        <Item key={list.id} nombre={list.nombre} precio={list.precio} descripcion={list.descripcion} stock={list.stock} pictureUrl= {list.pictureUrl}
                         />)}
                 </div>
 

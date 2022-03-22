@@ -32,12 +32,6 @@ return (
 		<Route path='/sign-up' element={<SignUp/>} />
 		<Route path="*" element={<Navigate to ="/" />} />
 	</Routes>
-
-		<div>
-			
-			<ItemDetailContainer/>
-
-		</div>
 		
 		
 		

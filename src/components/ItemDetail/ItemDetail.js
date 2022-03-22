@@ -1,13 +1,16 @@
 import React from 'react'
 
 
-export const ItemDetail = ({id, nombre, descripcion, precio,pictureUrl, categoria}) => {
+export function ItemDetail (props){
+    const{id, nombre, descripcion, precio, pictureUrl}=props
+
     return (
         <div>
             
             <h3>{nombre}</h3>
             <p>{descripcion}</p>
-            <span>Precio: {precio}</span>
+            <img src={pictureUrl} alt={nombre}></img>
+            <span>Precio: $ {precio}</span>
         </div>
     )
 }
