@@ -28,19 +28,22 @@ export const ItemDetail = ({id, nombre, descripcion, precio, pictureUrl, stock})
     }
     
     return (
-        <div>
-            
-            <h3>{nombre}</h3>
-            <p>{descripcion}</p>
-            <img src={pictureUrl} alt={nombre}></img>
-            <span>Precio: $ {precio}</span>
-
+        <div className='product'>
+            <div>
+                <h3>{nombre}</h3>
+                <p>{descripcion}</p>
+                <img className='image-product' src={pictureUrl} alt={nombre}></img>
+                <span>Precio: $ {precio}</span>
+            </div>
             {
                isInCart(id) 
                ?<>
-                    <Link to="/cart" className="btn btn-success my-3">
-                        Terminar mi compra
-                    </Link>
+                    <button className="snipcart-add-item">
+                        <Link to="/cart" >
+                            Terminar mi compra
+                        </Link>
+                    </button>
+                    
                </>
                :<>
                     <ItemCount 
@@ -49,7 +52,7 @@ export const ItemDetail = ({id, nombre, descripcion, precio, pictureUrl, stock})
                         setCantidad={setCantidad}
                     />
                     <button
-                        className='btn btn-success my-2'
+                        className="snipcart-add-item"
                         onClick={handleAgregar}
                     >
                         Agregar al carrito

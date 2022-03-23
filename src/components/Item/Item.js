@@ -17,7 +17,7 @@ function Item (props){
             />
             <h3>{nombre}</h3>
             <p>{descripcion}</p>
-            <span>{precio}</span> 
+            <span>Precio: $ {precio}</span> 
             <div>
                 <Link to={`/detail/${id}`}> 
                 

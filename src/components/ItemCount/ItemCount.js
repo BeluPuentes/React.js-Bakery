@@ -13,9 +13,9 @@ const ItemCount = ({max=5, cantidad, setCantidad, handleAgregar}) =>{
     
     return(
         <div>
-            <button className="btn btn-outline-primary" onClick={handleRestar}>-</button>
-            <span className="mx-4">{cantidad}</span>
-            <button className="btn btn-primary" onClick={handleSumar}>+</button>
+            <button className="snipcart-add-item" onClick={handleRestar}>-</button>
+            <span className="mx-6">   { cantidad }    </span>
+            <button className="snipcart-add-item" onClick={handleSumar}>+</button>
             <br/>
             
         </div>
