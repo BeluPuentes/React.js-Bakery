@@ -4,20 +4,21 @@ import { pedirDatos } from '../helpers/pedirDatos'
 import {ItemDetail}  from './ItemDetail'
 
 const ItemDetailContainer = () => {
-    const { itemid } = useParams()
-  
+
     const [item, setItem] = useState(null);
     const [loading, setLoading] = useState(false);
-  
+
+    const { itemId } = useParams()
+    
     useEffect(() => {
-      setLoading(true);
+      setLoading(true)
   
       pedirDatos()
         .then((res) => {
-          setItem(res.find((prod) => prod.id === parseInt(itemid)));
+          setItem(res.find((prod) => prod.id === parseInt(itemId)));
         })
         .finally(() => {
-          setLoading(false);
+          setLoading(false)
         });
     }, []);
   

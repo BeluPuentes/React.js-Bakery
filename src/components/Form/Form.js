@@ -24,10 +24,10 @@ export const Form =() =>{
     }
 
     return(
-        <div className="my-5 container">
+        <div className="my-5">
             <form onSubmit={handleSubmit}>
                 <input
-                    className="form-contrl my-2"
+                    className="form-control my-2"
                     type='text'
                     placeholder="Tu nombre"
                     value={values.nombre}
@@ -35,7 +35,7 @@ export const Form =() =>{
                     name='nombre'
                 />
                 <input
-                    className="form-contrl my-2"
+                    className="form-control my-2"
                     type='email'
                     placeholder="Tu mail"
                     value={values.email}
