@@ -50,13 +50,9 @@ export const ItemDetail = ({id, nombre, descripcion, precio, pictureUrl, stock})
                         max={stock} 
                         cantidad={cantidad} 
                         setCantidad={setCantidad}
+                        handleAgregar={handleAgregar}
                     />
-                    <button
-                        className="snipcart-add-item"
-                        onClick={handleAgregar}
-                    >
-                        Agregar al carrito
-                    </button>
+                   
                 </>
 
             }

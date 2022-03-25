@@ -1,5 +1,6 @@
 import { useState } from "react"
 
+
 const ItemCount = ({max=5, cantidad, setCantidad, handleAgregar}) =>{
     
 
@@ -17,6 +18,13 @@ const ItemCount = ({max=5, cantidad, setCantidad, handleAgregar}) =>{
             <span className="mx-6">   { cantidad }    </span>
             <button className="snipcart-add-item" onClick={handleSumar}>+</button>
             <br/>
+            <button
+                        className="snipcart-add-item"
+                        onClick={handleAgregar}
+                    >
+                        Agregar al carrito
+                    </button>
+        
             
         </div>
     )
