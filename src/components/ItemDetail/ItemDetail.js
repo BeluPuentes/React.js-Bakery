@@ -39,7 +39,7 @@ export const ItemDetail = ({id, nombre, descripcion, precio, pictureUrl, stock})
                isInCart(id) 
                ?<>
                     <button className="snipcart-add-item">
-                        <Link to="/cart" >
+                        <Link to="/Cart" >
                             Terminar mi compra
                         </Link>
                     </button>

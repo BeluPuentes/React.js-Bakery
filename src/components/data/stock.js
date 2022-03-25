@@ -13,7 +13,7 @@ export const stock = [
         nombre:"Torta Brownie",
         descripcion:"Torta a base de de brownie con dulce de leche y terminada con merengue Italiano", 
         precio:2000, 
-        pictureUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4vgk0RRGMTQGNj6UlfXZ_fqpkJsds-37AUQ&usqp=CAU", 
+        pictureUrl:"	https://niampatisserie.com.ar/wp-content/uploads/2020/08/IMG_0472-Brownie.jpg", 
         stock: 7,
         categoria:"tortas"
     },

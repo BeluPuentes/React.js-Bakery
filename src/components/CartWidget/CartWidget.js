@@ -6,20 +6,29 @@ import Button from "@material-ui/core/Button";
 import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
 import { Link } from "react-router-dom";
-
+import { Cart } from "../Cart/Cart";
+import './CartWidget.css';
+import { CartContext } from "../../Context/CartContext";
+import { useContext } from "react";
+import { BsFillTrashFill } from "react-icons/bs";
 
 export default function App() {
 const [count, setCount] = React.useState(0);
+const {cantidadCart} =useContext(CartContext)
 
 return (
-	<div style={{display: "block", right: 10, padding: 30 }}>
-	<Link to="/cart"> 
 	<div>
+		
+	<Link to="/cart"> 
+		
+	<div >
 		<Badge color="secondary" badgeContent={count}>
 		<ShoppingCartIcon />{" "}
+		
+		<span>{cantidadCart()} </span>
 		</Badge>
 		<ButtonGroup>
-		<Button
+		<Button 
 			onClick={() => {
 			setCount(Math.max(count - 1, 0));
 			}}
@@ -37,6 +46,7 @@ return (
 		</Button>
 		</ButtonGroup>
 	</div>
+			
 	</Link> 
 	</div>
 );

@@ -30,17 +30,11 @@ const ItemListContainer = () => {
       })
   },[categoryId])
 
-  return (
-      <div className="flex">
-        {
-          loading
-                 ? <h2>Cargando...</h2>
-                 : <ItemList lista={productos}/>
-        }
-      </div>
-
-  )
+  if(loading){
+    return <h2>Cargando...</h2>
   }
+  return <ItemList lista={productos}/>
+}
   
   
   

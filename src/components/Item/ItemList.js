@@ -1,9 +1,10 @@
 import { StylesContext } from '@material-ui/styles'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Item from './Item'
 import './Item.css'
 
 function ItemList({lista}){
+    
     return(
         <div className={"container"}>
             <main className={"main"}>

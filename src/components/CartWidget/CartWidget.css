@@ -1,0 +1,10 @@
+.cartHidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.widget{
+    display: "block", 
+    right= 10, 
+    padding= 30 
+}
