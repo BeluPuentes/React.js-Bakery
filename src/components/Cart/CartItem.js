@@ -4,7 +4,7 @@ import { CartContext } from '../../context/CartContext'
 
 export const CartItem = ({name, price, cantidad, id}) => {
 
-    const {removerDelCarrito} = useContext(CartContext)
+    const {eliminarItem} = useContext(CartContext)
 
     return (
         <div>
@@ -13,7 +13,7 @@ export const CartItem = ({name, price, cantidad, id}) => {
             <p>Cantidad: {cantidad}</p>
             <button 
                 className="btn btn-danger"
-                onClick={() => { removerDelCarrito(id) }}
+                onClick={() => {eliminarItem(id) }}
             >
                 <BsFillTrashFill/>
             </button>

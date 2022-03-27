@@ -32,8 +32,8 @@ export const CartProvider =({children}) =>{
         setCart([])
     } 
     
-    const elimnarItem =(id) =>{
-        setCart(cart.filter((prod)=> prod.id !== id))
+    const eliminarItem =(id) =>{
+        setCart(cart.filter(prod=> prod.id !== id))
     }
 
 
@@ -45,7 +45,7 @@ export const CartProvider =({children}) =>{
             cantidadCart, 
             totalCart, 
             vaciarCart, 
-            elimnarItem,
+            eliminarItem,
         }}>
             {children}
         </CartContext.Provider>
