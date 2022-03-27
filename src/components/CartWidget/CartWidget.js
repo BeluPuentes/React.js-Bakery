@@ -14,14 +14,22 @@ import { BsFillTrashFill } from "react-icons/bs";
 
 export default function App() {
 const [count, setCount] = React.useState(0);
-const {cantidadCart} =useContext(CartContext)
+const {cantidadCart, cart} =useContext(CartContext)
+if (cart.length ===0)
+	{
+		return (
+			<div className="cartHidden"></div>
+		)
+		
+
+	}
 
 return (
 	<div>
 		
 	<Link to="/cart"> 
-		
 	<div >
+		
 		<Badge color="secondary" badgeContent={count}>
 		<ShoppingCartIcon />{" "}
 		
