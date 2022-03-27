@@ -44,6 +44,8 @@ export const ItemDetail = ({id, nombre, descripcion, precio, pictureUrl, stock})
                         </Link>
                     </button>
                     
+                     
+                    
                </>
                :<>
                     <ItemCount 

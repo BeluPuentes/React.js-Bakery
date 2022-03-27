@@ -45,6 +45,13 @@ export const Cart = () => {
             <button className="btn btnn-success mx-2">
               Terminar mi compra
             </button>
+            
+            <Link to='/' className="btn btn-primary">
+                <button>
+                    Seguir Comprando
+                </button>
+            </Link>
+
           </div>
         </div>
     </>
