@@ -1,9 +1,10 @@
 .product {
     margin: 1%;
-    padding: 15px;
+    padding: 5px;
     border: 1px solid lightgray;
     width: 25%;
     border-radius: 5px;
+
 }
 
 .product:hover {
@@ -16,7 +17,7 @@
 
 .product span {
     font-weight: bold;
-}
+} 
 
 .product button {
     background-color: white;
@@ -41,6 +42,7 @@
 
 
 .grid {
+   
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -78,7 +80,7 @@
 
 @media screen and (max-width: 550px){
     .titulo{
-        padding-bottom: 50vh;
+        padding-bottom: 40vh;
     }
     .product {
         width: 40%;
