@@ -14,7 +14,7 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
       setLoading(true)
-      const docRef = doc (db, "prductos", itemId)
+      const docRef = doc (db, "productos", itemId)
       
       getDoc(docRef)
         .then((doc)=>{
