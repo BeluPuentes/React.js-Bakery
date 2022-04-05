@@ -15,6 +15,7 @@ import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
 import Modal from './Modal/Modal';
 import {CartProvider} from './Context/CartContext'
 import {Cart} from './components/Cart/Cart';
+import { Checkout } from './components/Checkout/Checkout';
 
 alert ("Bienvenido");
 
@@ -39,6 +40,7 @@ return (
 		<Route path='/sign-up' element={<SignUp/>} />
 		<Route path="*" element={<Navigate to ="/" />} />
 		<Route path='/Cart' element={<Cart/>} />
+		<Route path='/checkout' element={<Checkout/>} />
 	</Routes>
 		
 

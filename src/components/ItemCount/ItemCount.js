@@ -1,6 +1,3 @@
-import { MinimizeSharp } from "@material-ui/icons"
-import { useState } from "react"
-
 
 const ItemCount = ({max=5, cantidad, setCantidad, handleAgregar}) =>{
     

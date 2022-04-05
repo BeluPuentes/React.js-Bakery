@@ -6,11 +6,9 @@ import Button from "@material-ui/core/Button";
 import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
 import { Link } from "react-router-dom";
-import { Cart } from "../Cart/Cart";
 import './CartWidget.css';
 import { CartContext } from "../../Context/CartContext";
 import { useContext } from "react";
-import { BsFillTrashFill } from "react-icons/bs";
 
 export default function App() {
 const [count, setCount] = React.useState(0);
