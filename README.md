@@ -1,3 +1,9 @@
+My Bakery 
+Es un Ecommerce donde se podran encontrar los mejores postres para comer. Los mismos son hechos a mano siguiendo las mejores recetas.
+
+// React Bootstrap Utilicé react bootstrap para simplificar el desarrollo de estilo y de esta manera hacer la app lo más responsive posible de manera rápida
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
