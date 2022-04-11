@@ -1,5 +1,3 @@
-import { StylesContext } from '@material-ui/styles'
-import React, { useEffect } from 'react'
 import Item from './Item'
 import './Item.css'
 
