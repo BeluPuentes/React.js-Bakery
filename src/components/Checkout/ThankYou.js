@@ -7,7 +7,10 @@ export const ThankYou =({order})=>{
             <h2>Gracias pro comprar en My Bakery</h2>
             <hr/>
             <h3>Tu numero de orden es: {order}</h3>
-            <Link to='/' className="btn btn-primary">Volver</Link>
+            <button>
+            <Link to='/' className="snipcart-add-item">Volver</Link>
+            </button>
+            
             
             </div>
             

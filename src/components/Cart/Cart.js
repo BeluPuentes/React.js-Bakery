@@ -9,7 +9,10 @@ export const Cart = () => {
     if (cart.length ===0){
         return <div className="my-4">
             <h2>Tu carrito esta vacio</h2>
-            <Link to='/' className="btn btn-primary">Volver </Link>
+            <button>
+            <Link to='/' className="snipcart-add-item">Volver </Link>
+            </button>
+            
       </div>
     } 
  
